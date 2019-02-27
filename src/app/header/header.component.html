@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><fa-icon [icon]="faCode"></fa-icon>  Preshailen-Ruthnam.com</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-md-auto d-md-flex">
+      <li class="nav-item">
+        <a class="nav-link p-2" routerLink="/projects"><fa-icon [icon]="faFolderOpen"></fa-icon>  Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" routerLink="/resume"><fa-icon [icon]="faFile"></fa-icon>  Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" routerLink="/about"><fa-icon [icon]="faInfo"></fa-icon>  About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" routerLink="/contact"><fa-icon [icon]="faMailBulk"></fa-icon>  Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

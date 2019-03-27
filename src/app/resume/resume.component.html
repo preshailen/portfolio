@@ -1,5 +1,12 @@
 <div class="container">
-    <button class="btn btn-primary" (click)="downloadFile()">Download as PDF</button>
-    <pdf-viewer [src]="pdfSrc" [render-text]="true">
+  <br>
+  <h1 class="lead">Resume</h1>
+  <button class="btn btn-primary" (click)="downloadFile()">Download as PDF</button>
+  <br>
+  <br>
+  <div class="pdf-container">
+    <pdf-viewer [src]="pdfSrc" [original-size]="false"  [render-text]="true">
     </pdf-viewer>
+  </div>
 </div>
+

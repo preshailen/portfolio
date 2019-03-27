@@ -12,7 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectsService } from './projects.service';
 const routes = [
   { path: '', component: HomeComponent},
   { path: 'projects', component: ProjectsComponent},
@@ -35,10 +36,11 @@ const routes = [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     PdfViewerModule
   ],
-  providers: [],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

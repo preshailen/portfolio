@@ -1,6 +1,7 @@
 export default class Projects {
   title: string;
-  description: string;
+  type: string;
   github: string;
   demo: string;
+  description: string;
 }

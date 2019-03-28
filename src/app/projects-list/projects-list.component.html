@@ -1,0 +1,20 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>Title</td>
+        <td>Type</td>
+        <td>Github Code</td>
+        <td>Live Demo</td>
+        <td>Description</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let project of projects">
+            <td>{{ project.title }}</td>
+            <td>{{ project.type }}</td>
+            <td><a href="{{ project.github }}">{{ project.github }}</a></td>
+            <td><a href="{{ project.demo }}">{{ project.demo }}</a></td>
+            <td>{{ project.description }}</td>
+        </tr>
+    </tbody>
+  </table>

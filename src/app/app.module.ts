@@ -14,12 +14,17 @@ import { RouterModule } from '@angular/router';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsService } from './projects.service';
+import { ProjectsListComponent } from './projects-list/projects-list.component';
+import { AddComponent } from './add/add.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 const routes = [
   { path: '', component: HomeComponent},
   { path: 'projects', component: ProjectsComponent},
   { path: 'resume', component: ResumeComponent},
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'add', component: AddComponent},
   { path: '**', redirectTo: '/'}
 ];
 @NgModule({
@@ -30,13 +35,17 @@ const routes = [
     ResumeComponent,
     ProjectsComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsListComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
     PdfViewerModule
   ],

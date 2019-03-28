@@ -1,0 +1,35 @@
+<div class="container">
+    <br>
+    <h1  class="lead">Add</h1>
+    <div class="card">
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+            <div class="form-group">
+              <label class="col-md-4">Title:</label>
+              <input type="text" class="form-control" name="title"  id="title" ngModel required>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Type:</label>
+              <input type="text" class="form-control" name="type"  id="type" ngModel required>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Github:</label>
+              <input type="text" class="form-control" name="github"  id="github" ngModel required>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">Demo:</label>
+                <input type="text" class="form-control" name="demo"  id="demo" ngModel required>
+            </div>
+            <div class="form-group">
+                  <label class="col-md-4">Description:</label>
+                  <input type="text" class="form-control" name="description"  id="description" ngModel required>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Add Project</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</div>
+
+
